@@ -1,0 +1,3426 @@
+{
+  "BNB": {
+    "20": [
+      {
+        "Bancor": {
+          "totalPrice": 0.8919458233539597,
+          "tokenAmount": 20,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.044597291167697985
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.8955200000000001,
+          "tokenAmount": 20,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.044776
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.90065770704,
+          "tokenAmount": 20,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.045032885352
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.9245380524695809,
+          "tokenAmount": 20,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.046226902623479046
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.1799994495999906,
+          "tokenAmount": 20,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.05899997247999953
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "50": [
+      {
+        "Bancor": {
+          "totalPrice": 2.2410859237723284,
+          "tokenAmount": 50,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.04482171847544657
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 2.2449714399999996,
+          "tokenAmount": 50,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.044899428799999995
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 2.2516947054,
+          "tokenAmount": 50,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.045033894107999996
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 2.317351951363671,
+          "tokenAmount": 50,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.04634703902727342
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 2.9499987304738275,
+          "tokenAmount": 50,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.05899997460947655
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "125": [
+      {
+        "DDEX": {
+          "totalPrice": 5.605776599999999,
+          "tokenAmount": 125,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.044846212799999986
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 5.673492459622501,
+          "tokenAmount": 125,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.04538793967698001
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 5.794539250007819,
+          "tokenAmount": 125,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.04635631400006256
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 8.786985923606775,
+          "tokenAmount": 125,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.0702958873888542
+        }
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "312.5": [
+      {
+        "Bancor": {
+          "totalPrice": 14.647459995498773,
+          "tokenAmount": 312.5,
+          "tokenSymbol": "BNB",
+          "avgPrice": 0.04687187198559607
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ]
+  },
+  "MKR": {
+    "0.25": [
+      {
+        "Bancor": {
+          "totalPrice": 0.8256639498597819,
+          "tokenAmount": 0.25,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.3026557994391275
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.8312722409624158,
+          "tokenAmount": 0.25,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.3250889638496632
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.8461617962431852,
+          "tokenAmount": 0.25,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.384647184972741
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.8711501862921168,
+          "tokenAmount": 0.25,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.4846007451684673
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.909825,
+          "tokenAmount": 0.25,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.6393
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.9869812296,
+          "tokenAmount": 0.25,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.9479249184
+        }
+      }
+    ],
+    "0.625": [
+      {
+        "Bancor": {
+          "totalPrice": 2.071703141001028,
+          "tokenAmount": 0.625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.314725025601645
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 2.0781806024060394,
+          "tokenAmount": 0.625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.3250889638496632
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 2.115404490607963,
+          "tokenAmount": 0.625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.384647184972741
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 2.179102075846162,
+          "tokenAmount": 0.625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.4865633213538594
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 2.330192,
+          "tokenAmount": 0.625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.7283071999999997
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 2.4799349796,
+          "tokenAmount": 0.625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.9678959673599996
+        }
+      }
+    ],
+    "1.5625": [
+      {
+        "Radar Relay": {
+          "totalPrice": 5.1954515060150985,
+          "tokenAmount": 1.5625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.3250889638496632
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 5.226455542124973,
+          "tokenAmount": 1.5625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.3449315469599825
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 5.288511226519908,
+          "tokenAmount": 1.5625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.3846471849727413
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 5.446294508794509,
+          "tokenAmount": 1.5625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.4856284856284856
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 6.2123193546,
+          "tokenAmount": 1.5625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.975884386944
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 10.3364795,
+          "tokenAmount": 1.5625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 6.61534688
+        }
+      }
+    ],
+    "3.90625": [
+      {
+        "Radar Relay": {
+          "totalPrice": 13.091908993092492,
+          "tokenAmount": 3.90625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.3515287022316778
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 13.221278066299769,
+          "tokenAmount": 3.90625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.384647184972741
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 13.371823334085937,
+          "tokenAmount": 3.90625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.423186773526
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 13.615736271986272,
+          "tokenAmount": 3.90625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 3.4856284856284856
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 16.015571371180865,
+          "tokenAmount": 3.90625,
+          "tokenSymbol": "MKR",
+          "avgPrice": 4.099986271022302
+        }
+      },
+      {
+        "DDEX": {}
+      }
+    ]
+  },
+  "OMG": {
+    "65": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.6521447541379403,
+          "tokenAmount": 65,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010032996217506774
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 0.6537347432010875,
+          "tokenAmount": 65,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010057457587709038
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.6574560849884961,
+          "tokenAmount": 65,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010114708999823016
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.662999993096026,
+          "tokenAmount": 65,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010199999893785014
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.6743565458376908,
+          "tokenAmount": 65,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010374716089810627
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      }
+    ],
+    "162.5": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.6310181954806502,
+          "tokenAmount": 162.5,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010037035049111694
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 1.63605,
+          "tokenAmount": 162.5,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010068
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 1.638142749498511,
+          "tokenAmount": 162.5,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010080878458452375
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.6437349111658914,
+          "tokenAmount": 162.5,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.01011529176102087
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.681706587496328,
+          "tokenAmount": 162.5,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010348963615362018
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.6880858762333302,
+          "tokenAmount": 162.5,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010388220776820493
+        }
+      }
+    ],
+    "406.25": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.076670244164207,
+          "tokenAmount": 406.25,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010034880601019586
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 4.1102596164265375,
+          "tokenAmount": 406.25,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010117562132742246
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 4.118902372189895,
+          "tokenAmount": 406.25,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010138836608467434
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.226138986749792,
+          "tokenAmount": 406.25,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010402803659691795
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 4.252063775773744,
+          "tokenAmount": 406.25,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010466618524981522
+        }
+      },
+      {
+        "DDEX": {}
+      }
+    ],
+    "1015.625": [
+      {
+        "AirSwap": {
+          "totalPrice": 10.222491746517434,
+          "tokenAmount": 1015.625,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010065222642724858
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 10.282962122248506,
+          "tokenAmount": 1015.625,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010124762704983144
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 10.448257201015833,
+          "tokenAmount": 1015.625,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.010287514782538667
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 10.584451058477065,
+          "tokenAmount": 1015.625,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.01042161334988511
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 12.665013006800434,
+          "tokenAmount": 1015.625,
+          "tokenSymbol": "OMG",
+          "avgPrice": 0.012470166652849658
+        }
+      },
+      {
+        "DDEX": {}
+      }
+    ]
+  },
+  "ZIL": {
+    "5000": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.7846661480269335,
+          "tokenAmount": 5000,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.0001569332296053867
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.7865829145728642,
+          "tokenAmount": 5000,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00015731658291457285
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.7868082999999999,
+          "tokenAmount": 5000,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00015736165999999998
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.7873499999999981,
+          "tokenAmount": 5000,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00015746999999999962
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.8116921436533377,
+          "tokenAmount": 5000,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00016233842873066755
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "12500": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.9624550480382157,
+          "tokenAmount": 12500,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00015699640384305726
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.9664572864321606,
+          "tokenAmount": 12500,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00015731658291457285
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 2.0341491924120207,
+          "tokenAmount": 12500,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00016273193539296165
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 2.058092668370125,
+          "tokenAmount": 12500,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00016464741346960997
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "31250": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.905084518379393,
+          "tokenAmount": 31250,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.0001569627045881406
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 4.935416749861727,
+          "tokenAmount": 31250,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00015793333599557527
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 5.103295451509968,
+          "tokenAmount": 31250,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.000163305454448319
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 5.635971112372465,
+          "tokenAmount": 31250,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00018035107559591888
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "78125": [
+      {
+        "AirSwap": {
+          "totalPrice": 12.264685755689138,
+          "tokenAmount": 78125,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00015698797767282096
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 12.355157770419819,
+          "tokenAmount": 78125,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.0001581460194613737
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 12.812424696366037,
+          "tokenAmount": 78125,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00016399903611348526
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 15.242632979766862,
+          "tokenAmount": 78125,
+          "tokenSymbol": "ZIL",
+          "avgPrice": 0.00019510570214101584
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "ZRX": {
+    "312": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.6812157630710627,
+          "tokenAmount": 312,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0021833838559969956
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.683418898902266,
+          "tokenAmount": 312,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.002190445188789314
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.6837479999999999,
+          "tokenAmount": 312,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0021915
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.703547804539657,
+          "tokenAmount": 312,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0022549609119860803
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.779999687999998,
+          "tokenAmount": 312,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0024999989999999936
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "780": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.7039343030433147,
+          "tokenAmount": 780,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0021845311577478395
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.708547247255665,
+          "tokenAmount": 780,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.002190445188789314
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 1.7145180000000002,
+          "tokenAmount": 780,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0021981
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.7656340626161335,
+          "tokenAmount": 780,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0022636334136104277
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.9499998439999993,
+          "tokenAmount": 780,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.002499999799999999
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "1950": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.262583847598606,
+          "tokenAmount": 1950,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0021859404346659516
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 4.271368118139162,
+          "tokenAmount": 1950,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.002190445188789314
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 4.280904,
+          "tokenAmount": 1950,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0021953353846153843
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.42798421455448,
+          "tokenAmount": 1950,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0022707611356689644
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 5.04976432938192,
+          "tokenAmount": 1950,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.002589622733016369
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "4875": [
+      {
+        "AirSwap": {
+          "totalPrice": 10.664716616573637,
+          "tokenAmount": 4875,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.002187634177758695
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 10.705505118476061,
+          "tokenAmount": 4875,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0021960010499438073
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 10.7405203,
+          "tokenAmount": 4875,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0022031836512820513
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 11.085236521864665,
+          "tokenAmount": 4875,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.002273894671151726
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 13.460696605296427,
+          "tokenAmount": 4875,
+          "tokenSymbol": "ZRX",
+          "avgPrice": 0.0027611685344197797
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "BAT": {
+    "715": [
+      {
+        "Bancor": {
+          "totalPrice": 0.6609185262400368,
+          "tokenAmount": 715,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009243615751608905
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.6651876492206992,
+          "tokenAmount": 715,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009303323765324464
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.6700039513052091,
+          "tokenAmount": 715,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009370684633639288
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.6906463857242998,
+          "tokenAmount": 715,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009659390010130067
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.7026967712000001,
+          "tokenAmount": 715,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.000982792686993007
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.7534813797693564,
+          "tokenAmount": 715,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0010538201115655333
+        }
+      }
+    ],
+    "1787.5": [
+      {
+        "Bancor": {
+          "totalPrice": 1.6543514570016318,
+          "tokenAmount": 1787.5,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009255113046162975
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 1.6636385593902636,
+          "tokenAmount": 1787.5,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009307068863721754
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.6750001263638084,
+          "tokenAmount": 1787.5,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009370630077559767
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.728050007082081,
+          "tokenAmount": 1787.5,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.000966741262703262
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 1.7946047312,
+          "tokenAmount": 1787.5,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0010039746747972028
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 2.1794766136023007,
+          "tokenAmount": 1787.5,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0012192876160012872
+        }
+      }
+    ],
+    "4468.75": [
+      {
+        "Bancor": {
+          "totalPrice": 4.148341603501318,
+          "tokenAmount": 4468.75,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009283002189653299
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 4.161747630808882,
+          "tokenAmount": 4468.75,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009313001691320575
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 4.187460191511176,
+          "tokenAmount": 4468.75,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009370540288696339
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 4.2029934375,
+          "tokenAmount": 4468.75,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.00094053
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.340525487496436,
+          "tokenAmount": 4468.75,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009713064027964052
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 6.563489425918092,
+          "tokenAmount": 4468.75,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0014687528785271254
+        }
+      }
+    ],
+    "11171.875": [
+      {
+        "AirSwap": {
+          "totalPrice": 10.415171143731216,
+          "tokenAmount": 11171.875,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.000932267067410906
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 10.450413223359305,
+          "tokenAmount": 11171.875,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.000935421603209784
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 10.489114632285952,
+          "tokenAmount": 11171.875,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009388857852675538
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 10.5086924275,
+          "tokenAmount": 11171.875,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009406382033006992
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 10.843398087763449,
+          "tokenAmount": 11171.875,
+          "tokenSymbol": "BAT",
+          "avgPrice": 0.0009705978707928122
+        }
+      },
+      {
+        "IDEX": {}
+      }
+    ]
+  },
+  "LINK": {
+    "250": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.6516325000000001,
+          "tokenAmount": 250,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.00260653
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.6536109999999999,
+          "tokenAmount": 250,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0026144439999999996
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.6655074326436984,
+          "tokenAmount": 250,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0026620297305747936
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.6754506496598326,
+          "tokenAmount": 250,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0027018025986393305
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.6899725000000008,
+          "tokenAmount": 250,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.002759890000000003
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "625": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.643725,
+          "tokenAmount": 625,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.00262996
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 1.646868,
+          "tokenAmount": 625,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0026349888
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.6643055835390548,
+          "tokenAmount": 625,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0026628889336624876
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.6936333268606059,
+          "tokenAmount": 625,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0027098133229769695
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.7248781042021735,
+          "tokenAmount": 625,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0027598049667234776
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "1562.5": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.1382812499999995,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0026485
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 4.183100570584515,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0026771843651740897
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.258247873591077,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0027252786390982893
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 4.74033067562504,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0030338116324000255
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "3906.25": [
+      {
+        "AirSwap": {
+          "totalPrice": 10.4533203125,
+          "tokenAmount": 3906.25,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.00267605
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 10.607958313408929,
+          "tokenAmount": 3906.25,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0027156373282326857
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 10.737289998346865,
+          "tokenAmount": 3906.25,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0027487462395767975
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 13.342974838363096,
+          "tokenAmount": 3906.25,
+          "tokenSymbol": "LINK",
+          "avgPrice": 0.0034158015586209524
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "REP": {
+    "10": [
+      {
+        "DDEX": {
+          "totalPrice": 0.6461699999999999,
+          "tokenAmount": 10,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.064617
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.6465112535880032,
+          "tokenAmount": 10,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06465112535880033
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.6533641132231451,
+          "tokenAmount": 10,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06533641132231452
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.6641440569237967,
+          "tokenAmount": 10,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06641440569237968
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.7892236604824511,
+          "tokenAmount": 10,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.07892236604824511
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "25": [
+      {
+        "DDEX": {
+          "totalPrice": 1.6239750000000002,
+          "tokenAmount": 25,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.064959
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 1.6248490540721856,
+          "tokenAmount": 25,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06499396216288743
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.6370904424957982,
+          "tokenAmount": 25,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06548361769983192
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.6651891909632854,
+          "tokenAmount": 25,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06660756763853141
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.974223660482451,
+          "tokenAmount": 25,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.07896894641929804
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "62.5": [
+      {
+        "DDEX": {
+          "totalPrice": 4.06741342,
+          "tokenAmount": 62.5,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06507861472000001
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 4.080646460307659,
+          "tokenAmount": 62.5,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06529034336492255
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 4.092897224716991,
+          "tokenAmount": 62.5,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06548635559547185
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.190093033913913,
+          "tokenAmount": 62.5,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.0670414885426226
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 5.106079988392635,
+          "tokenAmount": 62.5,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.08169727981428215
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "156.25": [
+      {
+        "AirSwap": {
+          "totalPrice": 10.197509660798627,
+          "tokenAmount": 156.25,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06526406182911121
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 10.376231261203117,
+          "tokenAmount": 156.25,
+          "tokenSymbol": "REP",
+          "avgPrice": 0.06640788007169994
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "GNO": {
+    "8": [
+      {
+        "Bancor": {
+          "totalPrice": 0.6431747304170246,
+          "tokenAmount": 8,
+          "tokenSymbol": "GNO",
+          "avgPrice": 0.08039684130212807
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.6482636,
+          "tokenAmount": 8,
+          "tokenSymbol": "GNO",
+          "avgPrice": 0.08103295
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.5501143349039999,
+          "tokenAmount": 8,
+          "tokenSymbol": "GNO",
+          "avgPrice": 0.19376429186299998
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "20": [
+      {
+        "Bancor": {
+          "totalPrice": 1.6132852579592198,
+          "tokenAmount": 20,
+          "tokenSymbol": "GNO",
+          "avgPrice": 0.080664262897961
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 1.6206378,
+          "tokenAmount": 20,
+          "tokenSymbol": "GNO",
+          "avgPrice": 0.08103189
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 3.8752858332399995,
+          "tokenAmount": 20,
+          "tokenSymbol": "GNO",
+          "avgPrice": 0.193764291662
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "50": [
+      {
+        "Bancor": {
+          "totalPrice": 4.067010074034765,
+          "tokenAmount": 50,
+          "tokenSymbol": "GNO",
+          "avgPrice": 0.08134020148069529
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 10.041008818442837,
+          "tokenAmount": 50,
+          "tokenSymbol": "GNO",
+          "avgPrice": 0.20082017636885674
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "125": [
+      {
+        "Bancor": {
+          "totalPrice": 10.385154382907713,
+          "tokenAmount": 125,
+          "tokenSymbol": "GNO",
+          "avgPrice": 0.0830812350632617
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ]
+  },
+  "DAI": {
+    "100": [
+      {
+        "Bancor": {
+          "totalPrice": 0.6586658407729336,
+          "tokenAmount": 100,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.006586658407729335
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.6737,
+          "tokenAmount": 100,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.006737
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.6814806640568108,
+          "tokenAmount": 100,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.006814806640568109
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 15329.482799999998,
+          "tokenAmount": 100,
+          "tokenSymbol": "DAI",
+          "avgPrice": 153.29482799999997
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 15390.479632815797,
+          "tokenAmount": 100,
+          "tokenSymbol": "DAI",
+          "avgPrice": 153.90479632815797
+        }
+      },
+      {
+        "IDEX": {
+          "IDEX": {}
+        }
+      }
+    ],
+    "250": [
+      {
+        "Bancor": {
+          "totalPrice": 1.648594336837291,
+          "tokenAmount": 250,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.006594377347349164
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.703701660142027,
+          "tokenAmount": 250,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.006814806640568108
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 1.7140499999999999,
+          "tokenAmount": 250,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.0068562
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 38544.890900000006,
+          "tokenAmount": 250,
+          "tokenSymbol": "DAI",
+          "avgPrice": 154.17956360000002
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 38709.69091009704,
+          "tokenAmount": 250,
+          "tokenSymbol": "DAI",
+          "avgPrice": 154.83876364038815
+        }
+      },
+      {
+        "IDEX": {
+          "IDEX": {}
+        }
+      }
+    ],
+    "625": [
+      {
+        "Bancor": {
+          "totalPrice": 4.133573783154529,
+          "tokenAmount": 625,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.0066137180530472465
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.2741989017598225,
+          "tokenAmount": 625,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.006838718242815716
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 4.285125,
+          "tokenAmount": 625,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.0068562
+        }
+      },
+      {
+        "IDEX": {
+          "IDEX": {}
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Radar Relay": {}
+      }
+    ],
+    "1562.5": [
+      {
+        "Bancor": {
+          "totalPrice": 10.410350662556281,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.00666262442403602
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 10.694449649076606,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.006844447775409028
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 10.712812499999998,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "DAI",
+          "avgPrice": 0.006856199999999999
+        }
+      },
+      {
+        "IDEX": {
+          "IDEX": {}
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Radar Relay": {}
+      }
+    ]
+  },
+  "MANA": {
+    "2000": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.6056379583188048,
+          "tokenAmount": 2000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.00030281897915940243
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 0.6060548523592038,
+          "tokenAmount": 2000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0003030274261796019
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.60786,
+          "tokenAmount": 2000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.00030393
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.6098491221181135,
+          "tokenAmount": 2000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.00030492456105905673
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.6279035144410038,
+          "tokenAmount": 2000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0003139517572205019
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.68,
+          "tokenAmount": 2000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.00034
+        }
+      }
+    ],
+    "5000": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.514826244465316,
+          "tokenAmount": 5000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0003029652488930632
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 1.5184089141108732,
+          "tokenAmount": 5000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.00030368178282217463
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 1.5200500000000001,
+          "tokenAmount": 5000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.00030401
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.5238916163343441,
+          "tokenAmount": 5000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0003047783232668688
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.5733040242684964,
+          "tokenAmount": 5000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0003146608048536993
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.7000000000000002,
+          "tokenAmount": 5000,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.00034
+        }
+      }
+    ],
+    "12500": [
+      {
+        "AirSwap": {
+          "totalPrice": 3.788692313887621,
+          "tokenAmount": 12500,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0003030953851110097
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 3.8103222,
+          "tokenAmount": 12500,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.000304825776
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 3.810734729635225,
+          "tokenAmount": 12500,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.000304858778370818
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 3.8166050644713776,
+          "tokenAmount": 12500,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0003053284051577102
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 3.9435461964163068,
+          "tokenAmount": 12500,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.00031548369571330454
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 4.25,
+          "tokenAmount": 12500,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.00034
+        }
+      }
+    ],
+    "31250": [
+      {
+        "Radar Relay": {
+          "totalPrice": 9.535414115895188,
+          "tokenAmount": 31250,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.000305133251708646
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 9.672702834970911,
+          "tokenAmount": 31250,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0003095264907190692
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 9.93155183207546,
+          "tokenAmount": 31250,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0003178096586264147
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 13.257004626402615,
+          "tokenAmount": 31250,
+          "tokenSymbol": "MANA",
+          "avgPrice": 0.0004242241480448837
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "AirSwap": {}
+      }
+    ]
+  },
+  "WTC": {
+    "83": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.697117,
+          "tokenAmount": 83,
+          "tokenSymbol": "WTC",
+          "avgPrice": 0.008399
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.9063370151779481,
+          "tokenAmount": 83,
+          "tokenSymbol": "WTC",
+          "avgPrice": 0.01091972307443311
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "207.5": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.738435,
+          "tokenAmount": 207.5,
+          "tokenSymbol": "WTC",
+          "avgPrice": 0.008378
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 2.942544617673714,
+          "tokenAmount": 207.5,
+          "tokenSymbol": "WTC",
+          "avgPrice": 0.014180937916499825
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "518.75": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.3569812500000005,
+          "tokenAmount": 518.75,
+          "tokenSymbol": "WTC",
+          "avgPrice": 0.008399
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "1296.875": [
+      {
+        "AirSwap": {
+          "totalPrice": 10.843171875000001,
+          "tokenAmount": 1296.875,
+          "tokenSymbol": "WTC",
+          "avgPrice": 0.008361
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "BNT": {
+    "140": [
+      {
+        "Bancor": {
+          "totalPrice": 0.6269928584171713,
+          "tokenAmount": 140,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.004478520417265509
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.6274799999999999,
+          "tokenAmount": 140,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.004482
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.6475435846172475,
+          "tokenAmount": 140,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.0046253113186946245
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.8628077749187262,
+          "tokenAmount": 140,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.013305769820848044
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "350": [
+      {
+        "Bancor": {
+          "totalPrice": 1.5675333916049838,
+          "tokenAmount": 350,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.004478666833157096
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 1.5687,
+          "tokenAmount": 350,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.004482
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.6267735617136694,
+          "tokenAmount": 350,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.004647924462039056
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 4.657003157934801,
+          "tokenAmount": 350,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.013305723308385146
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "875": [
+      {
+        "Bancor": {
+          "totalPrice": 3.919068360150804,
+          "tokenAmount": 875,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.004478935268743776
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.075936072097258,
+          "tokenAmount": 875,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.004658212653825438
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 13.43187363849799,
+          "tokenAmount": 875,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.015350712729711988
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "2187.5": [
+      {
+        "Bancor": {
+          "totalPrice": 9.799226689652208,
+          "tokenAmount": 2187.5,
+          "tokenSymbol": "BNT",
+          "avgPrice": 0.004479646486698153
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ]
+  },
+  "KNC": {
+    "625": [
+      {
+        "Bancor": {
+          "totalPrice": 0.6787682804104218,
+          "tokenAmount": 625,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.001086029248656675
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.6805625000000001,
+          "tokenAmount": 625,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0010889
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.6825000000000001,
+          "tokenAmount": 625,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.001092
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.7022740552565211,
+          "tokenAmount": 625,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0011236384884104338
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.7437493749999999,
+          "tokenAmount": 625,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.001189999
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "1562.5": [
+      {
+        "Bancor": {
+          "totalPrice": 1.7040624118987835,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0010905999436152214
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 1.705625,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0010915999999999999
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 1.7108229799999999,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0010949267072
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.7611801347765756,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0011271552862570085
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.8593737728571456,
+          "tokenAmount": 1562.5,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0011899992146285731
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "3906.25": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.26484375,
+          "tokenAmount": 3906.25,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0010918
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 4.305359062286047,
+          "tokenAmount": 3906.25,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.001102171919945228
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 4.3283817099999995,
+          "tokenAmount": 3906.25,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.00110806571776
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.423790081738644,
+          "tokenAmount": 3906.25,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0011324902609250928
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 5.442599081122031,
+          "tokenAmount": 3906.25,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.00139330536476724
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ],
+    "9765.625": [
+      {
+        "Bancor": {
+          "totalPrice": 11.056761898717355,
+          "tokenAmount": 9765.625,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.001132212418428657
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 11.171530254217819,
+          "tokenAmount": 9765.625,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.0011439646980319048
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 22.859020586996543,
+          "tokenAmount": 9765.625,
+          "tokenSymbol": "KNC",
+          "avgPrice": 0.002340763708108446
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      }
+    ]
+  },
+  "LRC": {
+    "2222": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.69261962,
+          "tokenAmount": 2222,
+          "tokenSymbol": "LRC",
+          "avgPrice": 0.00031171
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.8420560311996613,
+          "tokenAmount": 2222,
+          "tokenSymbol": "LRC",
+          "avgPrice": 0.0003789631103508827
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "5555": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.7277161,
+          "tokenAmount": 5555,
+          "tokenSymbol": "LRC",
+          "avgPrice": 0.00031102
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 2.1419260287643738,
+          "tokenAmount": 5555,
+          "tokenSymbol": "LRC",
+          "avgPrice": 0.00038558524370195746
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "13887.5": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.3527591249999995,
+          "tokenAmount": 13887.5,
+          "tokenSymbol": "LRC",
+          "avgPrice": 0.00031342999999999996
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 15.69185787792692,
+          "tokenAmount": 13887.5,
+          "tokenSymbol": "LRC",
+          "avgPrice": 0.001129926759886727
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "34718.75": [
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "REN": {
+    "4000": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.606174395837245,
+          "tokenAmount": 4000,
+          "tokenSymbol": "REN",
+          "avgPrice": 0.00015154359895931124
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.620449840951113,
+          "tokenAmount": 4000,
+          "tokenSymbol": "REN",
+          "avgPrice": 0.00015511246023777826
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 4.7991996,
+          "tokenAmount": 4000,
+          "tokenSymbol": "REN",
+          "avgPrice": 0.0011997999
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "10000": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.5161679860458877,
+          "tokenAmount": 10000,
+          "tokenSymbol": "REN",
+          "avgPrice": 0.00015161679860458877
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.5510206280397076,
+          "tokenAmount": 10000,
+          "tokenSymbol": "REN",
+          "avgPrice": 0.00015510206280397077
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "25000": [
+      {
+        "AirSwap": {
+          "totalPrice": 3.812182877392681,
+          "tokenAmount": 25000,
+          "tokenSymbol": "REN",
+          "avgPrice": 0.00015248731509570724
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 3.981172828413446,
+          "tokenAmount": 25000,
+          "tokenSymbol": "REN",
+          "avgPrice": 0.00015924691313653786
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "62500": [
+      {
+        "IDEX": {
+          "totalPrice": 11.444092404484648,
+          "tokenAmount": 62500,
+          "tokenSymbol": "REN",
+          "avgPrice": 0.00018310547847175438
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "AST": {
+    "3333": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.6637798281612546,
+          "tokenAmount": 3333,
+          "tokenSymbol": "AST",
+          "avgPrice": 0.00019915386383475986
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.684911905703263,
+          "tokenAmount": 3333,
+          "tokenSymbol": "AST",
+          "avgPrice": 0.0002054941211230912
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.9664733463326667,
+          "tokenAmount": 3333,
+          "tokenSymbol": "AST",
+          "avgPrice": 0.0002899710009999
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "8332.5": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.658666080256838,
+          "tokenAmount": 8332.5,
+          "tokenSymbol": "AST",
+          "avgPrice": 0.00019905983561438202
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.7330189968240572,
+          "tokenAmount": 8332.5,
+          "tokenSymbol": "AST",
+          "avgPrice": 0.00020798307792667953
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 2.7412077940491155,
+          "tokenAmount": 8332.5,
+          "tokenSymbol": "AST",
+          "avgPrice": 0.0003289778330692008
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "20831.25": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.168659119909997,
+          "tokenAmount": 20831.25,
+          "tokenSymbol": "AST",
+          "avgPrice": 0.00020011564932061193
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.373666640429548,
+          "tokenAmount": 20831.25,
+          "tokenSymbol": "AST",
+          "avgPrice": 0.0002099569944400623
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "52078.125": [
+      {
+        "AirSwap": {
+          "totalPrice": 10.681755368624513,
+          "tokenAmount": 52078.125,
+          "tokenSymbol": "AST",
+          "avgPrice": 0.00020511021409900054
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "LOOM": {
+    "2000": [
+      {
+        "DDEX": {
+          "totalPrice": 0.67674,
+          "tokenAmount": 2000,
+          "tokenSymbol": "LOOM",
+          "avgPrice": 0.00033837
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.6576547796450536,
+          "tokenAmount": 2000,
+          "tokenSymbol": "LOOM",
+          "avgPrice": 0.0008288273898225268
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "5000": [
+      {
+        "DDEX": {
+          "totalPrice": 1.69185,
+          "tokenAmount": 5000,
+          "tokenSymbol": "LOOM",
+          "avgPrice": 0.00033837
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 6.10149619318371,
+          "tokenAmount": 5000,
+          "tokenSymbol": "LOOM",
+          "avgPrice": 0.001220299238636742
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "12500": [
+      {
+        "DDEX": {
+          "totalPrice": 51.428390310000005,
+          "tokenAmount": 12500,
+          "tokenSymbol": "LOOM",
+          "avgPrice": 0.004114271224800001
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "31250": [
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {
+          "Radar Relay": {}
+        }
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "FUN": {
+    "25000": [
+      {
+        "IDEX": {
+          "totalPrice": 0.7625,
+          "tokenAmount": 25000,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.0000305
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.7711289327575571,
+          "tokenAmount": 25000,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.000030845157310302283
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.7911855737708949,
+          "tokenAmount": 25000,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.000031647422950835796
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "62500": [
+      {
+        "IDEX": {
+          "totalPrice": 1.9089407176948288,
+          "tokenAmount": 62500,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.00003054305148311726
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 1.928753522071649,
+          "tokenAmount": 62500,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.000030860056353146385
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.9779639344272373,
+          "tokenAmount": 62500,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.000031647422950835796
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "156250": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.822272019752026,
+          "tokenAmount": 156250,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.000030862540926412966
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 4.944909836068093,
+          "tokenAmount": 156250,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.000031647422950835796
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 5.095227957869068,
+          "tokenAmount": 156250,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.000032609458930362035
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ],
+    "390625": [
+      {
+        "IDEX": {
+          "totalPrice": 83.3069378480121,
+          "tokenAmount": 390625,
+          "tokenSymbol": "FUN",
+          "avgPrice": 0.00021326576089091096
+        }
+      },
+      {
+        "DDEX": {
+          "DDEX": {}
+        }
+      },
+      {
+        "Kyber": {}
+      },
+      {
+        "AirSwap": {}
+      },
+      {
+        "Radar Relay": {}
+      },
+      {
+        "Bancor": {}
+      }
+    ]
+  },
+  "REQ": {
+    "4000": [
+      {
+        "AirSwap": {
+          "totalPrice": 0.67,
+          "tokenAmount": 4000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.0001675
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.67164,
+          "tokenAmount": 4000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00016791
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.6731658291457286,
+          "tokenAmount": 4000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00016829145728643216
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 0.6739141220067855,
+          "tokenAmount": 4000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00016847853050169637
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.6902843079099679,
+          "tokenAmount": 4000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00017257107697749198
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.8839725881727645,
+          "tokenAmount": 4000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00022099314704319113
+        }
+      }
+    ],
+    "10000": [
+      {
+        "AirSwap": {
+          "totalPrice": 1.6743,
+          "tokenAmount": 10000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00016743
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 1.67931375,
+          "tokenAmount": 10000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00016793137499999998
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.6828140703517591,
+          "tokenAmount": 10000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.0001682814070351759
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 1.6902972971865753,
+          "tokenAmount": 10000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00016902972971865753
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.7309703258117253,
+          "tokenAmount": 10000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00017309703258117253
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 2.3909768195877086,
+          "tokenAmount": 10000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00023909768195877086
+        }
+      }
+    ],
+    "25000": [
+      {
+        "AirSwap": {
+          "totalPrice": 4.187999999999999,
+          "tokenAmount": 25000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00016751999999999994
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 4.217244375126801,
+          "tokenAmount": 25000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00016868977500507202
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 4.260698867921659,
+          "tokenAmount": 25000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00017042795471686634
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 4.336392526321539,
+          "tokenAmount": 25000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00017345570105286158
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 6.740497765426503,
+          "tokenAmount": 25000,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00026961991061706013
+        }
+      },
+      {
+        "DDEX": {}
+      }
+    ],
+    "62500": [
+      {
+        "Radar Relay": {
+          "totalPrice": 10.556811355965225,
+          "tokenAmount": 62500,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.0001689089816954436
+        }
+      },
+      {
+        "Bancor": {
+          "totalPrice": 10.875501366228654,
+          "tokenAmount": 62500,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.00017400802185965847
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 10.903449566410481,
+          "tokenAmount": 62500,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.0001744551930625677
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 49.04045814789093,
+          "tokenAmount": 62500,
+          "tokenSymbol": "REQ",
+          "avgPrice": 0.0007846473303662549
+        }
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "AirSwap": {}
+      }
+    ]
+  },
+  "SNT": {
+    "4000": [
+      {
+        "Bancor": {
+          "totalPrice": 0.506817351907009,
+          "tokenAmount": 4000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00012670433797675227
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 0.5127200000000001,
+          "tokenAmount": 4000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00012818
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 0.514,
+          "tokenAmount": 4000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.0001285
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 0.5192416286088999,
+          "tokenAmount": 4000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00012981040715222497
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 0.529552084471764,
+          "tokenAmount": 4000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00013238802111794102
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 0.716362348,
+          "tokenAmount": 4000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.000179090587
+        }
+      }
+    ],
+    "10000": [
+      {
+        "Bancor": {
+          "totalPrice": 1.2702172928326725,
+          "tokenAmount": 10000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00012702172928326724
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 1.2885,
+          "tokenAmount": 10000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00012885
+        }
+      },
+      {
+        "DDEX": {
+          "totalPrice": 1.2917,
+          "tokenAmount": 10000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00012917
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 1.2990007666611791,
+          "tokenAmount": 10000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.0001299000766661179
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 1.3285300664118516,
+          "tokenAmount": 10000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00013285300664118516
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 1.7909058682603005,
+          "tokenAmount": 10000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00017909058682603007
+        }
+      }
+    ],
+    "25000": [
+      {
+        "Bancor": {
+          "totalPrice": 3.1956363251449575,
+          "tokenAmount": 25000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.0001278254530057983
+        }
+      },
+      {
+        "AirSwap": {
+          "totalPrice": 3.2242499999999996,
+          "tokenAmount": 25000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00012896999999999998
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 3.255856739444921,
+          "tokenAmount": 25000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00013023426957779684
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 3.3356945378225324,
+          "tokenAmount": 25000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.0001334277815129013
+        }
+      },
+      {
+        "IDEX": {
+          "totalPrice": 4.776786773488416,
+          "tokenAmount": 25000,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00019107147093953665
+        }
+      },
+      {
+        "DDEX": {}
+      }
+    ],
+    "62500": [
+      {
+        "Bancor": {
+          "totalPrice": 8.116626140929979,
+          "tokenAmount": 62500,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00012986601825487967
+        }
+      },
+      {
+        "Radar Relay": {
+          "totalPrice": 8.19457660417777,
+          "tokenAmount": 62500,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.00013111322566684432
+        }
+      },
+      {
+        "Kyber": {
+          "totalPrice": 8.439668828918107,
+          "tokenAmount": 62500,
+          "tokenSymbol": "SNT",
+          "avgPrice": 0.0001350347012626897
+        }
+      },
+      {
+        "IDEX": {}
+      },
+      {
+        "DDEX": {}
+      },
+      {
+        "AirSwap": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,185 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: ethereum-dex-prices-service
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+# frameworkVersion: "=X.X.X"
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${env:STAGE, 'development'}
+  timeout: 60
+  cfnRole: arn:aws:iam::${env:ACCOUNT_ID,"077264904088"}:role/ServerlessCloudformation
+  tracing: true # enable tracing
+  stackTags:
+    Environment: ${env:STAGE, 'development'}
+    Team: 'CHANGE_ME'
+    Service: '${self:service}'
+    Name: '${self:service}'
+    Owner: 'CHANGE_ME'
+  environment:
+    STAGE: ${env:STAGE, 'development'}
+  iamRoleStatements:
+    - Effect: 'Allow'
+      Action:
+        - 'ssm:Describe*'
+        - 'ssm:Get*'
+        - 'ssm:List*'
+      Resource: 'arn:aws:ssm:*:*:parameter/*'
+    - Effect: 'Allow' # xray permissions (required)
+      Action:
+        - 'xray:PutTraceSegments'
+        - 'xray:PutTelemetryRecords'
+      Resource:
+        - '*'
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-tracing
+  - serverless-domain-manager
+  - serverless-content-encoding
+  - serverless-log-forwarding
+  # - serverless-ssm-fetch
+
+# custom:
+#   contentEncoding:
+#     minimumCompressionSize: 0 # Minimum body size required for compression in bytes
+#   #serverlessSsmFetch:
+#   #  SAMPLE: /PATH/TO/SAMPLE~true
+#   serverless-offline:
+#     port: 4000
+#   dynamodb:
+#     start:
+#       port: 8002
+#       migrate: true
+#       dbPath: './'
+#     migration:
+#       dir: offline/migrations
+#   <%public_switch%>
+#   customDomain:
+#     domainName: <%service%>.${env:STAGE,"development"}.<%org%>.io
+#     basePath: ''
+#     createRoute53Record: true
+#   <%/public_switch%>
+#   logForwarding:
+#     destinationARN: 'arn:aws:lambda:us-east-1:${env:ACCOUNT_ID,"077264904088"}:function:DatadogLogCollector'
+#     filterPattern: "-\"RequestId: \""
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /hello
+          method: GET
+          cors: true
+  buy:
+    handler: handler.buy
+    events:
+      - http:
+          path: /buy
+          method: GET
+          cors: true
+  sell:
+    handler: handler.sell
+    events:
+      - http:
+          path: /sell
+          method: GET
+          cors: true
+  buyPriceSnapshot:
+    handler: handler.buyPriceSnapshot
+    events:
+      - schedule:
+          # every day at 2:00pm UTC
+          rate: cron(0 14 * * ? *)
+          enabled: true
+  sellPriceSnapshot:
+    handler: handler.sellPriceSnapshot
+    events:
+      - schedule:
+          # every day at 20 minutes past 2:00pm UTC
+          rate: cron(20 14 * * ? *)
+          enabled: true
+
+resources:
+  Parameters:
+    basePath:
+      Type: String
+      Default: ''
+    domainName:
+      Type: String
+      Default: '${self:service}.<%org%>.io'
+    certificateArn:
+      Type: String
+      Default: 'arn:aws:acm:us-east-1:<%org_prod_account%>:certificate/2c6f78cb-57e7-4b64-b4a4-63589adb1af3' # *.airswap.io
+  Conditions:
+    # Condition: is stage production?
+    IsProduction:
+      Fn::Equals:
+        - ${env:STAGE}
+        - production
+  Resources:
+    # if so, then create the api gateway domain name
+    ProductionDomainName:
+      Type: 'AWS::ApiGateway::DomainName'
+      Properties:
+        CertificateArn:
+          Ref: certificateArn
+        DomainName:
+          Ref: domainName
+      Condition: IsProduction
+    ProductionDomainNameMapping:
+      Type: 'AWS::ApiGateway::BasePathMapping'
+      Properties:
+        BasePath:
+          Ref: basePath
+        DomainName:
+          Ref: ProductionDomainName
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        Stage: ${env:STAGE}
+      Condition: IsProduction
+    # This response is needed for custom authorizer failures cors support
+    GatewayResponse:
+      Type: 'AWS::ApiGateway::GatewayResponse'
+      Properties:
+        ResponseParameters:
+          gatewayresponse.header.Access-Control-Allow-Origin: "'*'"
+          gatewayresponse.header.Access-Control-Allow-Headers: "'*'"
+        ResponseType: EXPIRED_TOKEN
+        RestApiId:
+          Ref: 'ApiGatewayRestApi'
+        StatusCode: '401'
+    AuthFailureGatewayResponse:
+      Type: 'AWS::ApiGateway::GatewayResponse'
+      Properties:
+        ResponseParameters:
+          gatewayresponse.header.Access-Control-Allow-Origin: "'*'"
+          gatewayresponse.header.Access-Control-Allow-Headers: "'*'"
+        ResponseType: UNAUTHORIZED
+        RestApiId:
+          Ref: 'ApiGatewayRestApi'
+        StatusCode: '401'
+    GatewayResponseDefault4XX:
+      Type: 'AWS::ApiGateway::GatewayResponse'
+      Properties:
+        ResponseParameters:
+          gatewayresponse.header.Access-Control-Allow-Origin: "'*'"
+          gatewayresponse.header.Access-Control-Allow-Headers: "'*'"
+        ResponseType: DEFAULT_4XX
+        RestApiId:
+          Ref: 'ApiGatewayRestApi'
