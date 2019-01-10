@@ -11,9 +11,10 @@
     "prettier:check": "prettier **.js -l",
     "prettier:fix": "prettier **.js --write",
     "debug:cli": "node --inspect-brk entrypoints/cli.js",
-    "debug:server": "node --inspect-brk entrypoints/server.js",
+    "debug:express": "node --inspect-brk entrypoints/server.js",
+    "debug:serverless": "SLS_DEBUG=* STAGE=local node --inspect-brk ~/.nvm/versions/node/v8.11.2/bin/serverless offline start",
     "serve:express": "node entrypoints/server.js",
-    "serve:serverless": "serverless offline start"
+    "serve:serverless": "STAGE=local serverless offline start"
   },
   "pre-commit": [
     "yarn lint",
