@@ -1,4 +1,5 @@
-const { initDb } = require('./db')
+const { initDb } = require('./database/db')
+const Snapshot = require('./database/snapshotModel')
 const { main } = require('./main')
 const { TOP_TOKENS_DATA } = require('./constants')
 
@@ -20,10 +21,11 @@ module.exports = {
         const { user, database, port, host } = db
         console.log('db connection successful!', `user ${user} connected on ${host}:${port} to DB "${database}"`)
         callback(null, makeResponse('hello world'))
+        db.end()
       })
       .catch(e => {
         console.log('db connection failure', e.message)
-        callback(null, makeResponse('hello world'))
+        callback(e.message, null)
       })
   },
   buy: (event, context, callback) => {
@@ -63,6 +65,7 @@ module.exports = {
       return new Promise(resolve => {
         async function workLoop(currentLevel) {
           const tokenData = tokens.pop()
+          console.log(tokens.length)
           if (!tokenData) {
             resolve(snapshots)
             return
@@ -73,6 +76,7 @@ module.exports = {
             snapshots.push({
               symbol,
               batchTimestamp,
+              isSell: false,
               data: sortedResponses,
             })
           } catch (error) {
@@ -97,9 +101,27 @@ module.exports = {
       await doWorkForPriceLevel(0)
       await doWorkForPriceLevel(1)
       await doWorkForPriceLevel(2)
-      callback(null, snapshots)
+
+      initDb()
+        .then(db => {
+          Snapshot.createSnapshots(db, snapshots).then(arr => {
+            console.log(`successfully inserted ${arr.length} rows`)
+            if (callback) {
+              callback(null, snapshots)
+            }
+            db.end()
+          })
+        })
+        .catch(e => {
+          console.log('db connection failure', e.message)
+          if (callback) {
+            callback(e, null)
+          }
+        })
     } catch (error) {
-      callback(error, null)
+      if (callback) {
+        callback(error, null)
+      }
     }
   },
   sellPriceSnapshot: async (event, context, callback) => {
@@ -121,6 +143,7 @@ module.exports = {
             snapshots.push({
               symbol,
               batchTimestamp,
+              isSell: true,
               data: sortedResponses,
             })
           } catch (error) {
@@ -145,9 +168,26 @@ module.exports = {
       await doWorkForPriceLevel(0)
       await doWorkForPriceLevel(1)
       await doWorkForPriceLevel(2)
-      callback(null, snapshots)
+      initDb()
+        .then(db => {
+          Snapshot.createSnapshots(db, snapshots).then(arr => {
+            console.log(`successfully inserted ${arr.length} rows`)
+            if (callback) {
+              callback(null, snapshots)
+            }
+            db.end()
+          })
+        })
+        .catch(e => {
+          console.log('db connection failure', e.message)
+          if (callback) {
+            callback(e, null)
+          }
+        })
     } catch (error) {
-      callback(error, null)
+      if (callback) {
+        callback(error, null)
+      }
     }
   },
 }
