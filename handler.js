@@ -1,22 +1,6 @@
-const { Client } = require('pg')
+const { initDb } = require('./db')
 const { main } = require('./main')
 const { TOP_TOKENS_DATA } = require('./constants')
-
-async function initDb() {
-  if (process.env.STAGE === 'local') {
-    const client = new Client({
-      user: 'postgres',
-      host: 'localhost',
-      database: 'postgres',
-      password: 'example',
-      port: 5432,
-    })
-    await client.connect()
-    return client
-  }
-  console.log('environment not yet supported!')
-  return null
-}
 
 const makeResponse = (response, origin = null) => ({
   statusCode: 200,
