@@ -22,6 +22,7 @@
     "yarn prettier:check"
   ],
   "dependencies": {
+    "aws-sdk": "^2.387.0",
     "cors": "^2.8.5",
     "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^13.1.0",
