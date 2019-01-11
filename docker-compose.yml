@@ -2,7 +2,7 @@
 version: "3.1"
 
 services:
-  db:
+  postgres:
     image: postgres
     restart: always
     environment:
@@ -10,3 +10,4 @@ services:
       POSTGRES_PASSWORD: example
     ports:
       - "5432:5432"
+  
