@@ -1,0 +1,3 @@
+CREATE TABLE mytable (
+    id SERIAL PRIMARY KEY
+);

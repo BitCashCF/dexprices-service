@@ -1,0 +1,1 @@
+CREATE INDEX mytable_timestamp ON mytable(timestamp timestamp_ops DESC);
