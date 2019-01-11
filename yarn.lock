@@ -1100,7 +1100,7 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-glob@^7.0.5, glob@^7.1.2:
+glob@^7.0.5, glob@^7.1.2, glob@^7.1.3:
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
   integrity sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
@@ -1729,6 +1729,11 @@ negotiator@0.6.1:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
   integrity sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk=
 
+newline@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/newline/-/newline-0.0.3.tgz#0f6a74493223dba04fe7dbfb6cdc804bf7e46dd0"
+  integrity sha1-D2p0STIj26BP59v7bNyAS/fkbdA=
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -2018,6 +2023,14 @@ pluralize@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
   integrity sha512-ARhBOdzS3e41FbkW/XWrTEtukqqLoK5+Z/4UeDaLuSW+39JPeFgs4gCGqsrJHVZX0fUrx//4OF0K1CUGwlIFow==
+
+postgrator@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/postgrator/-/postgrator-3.7.0.tgz#4273db354b089c66a3a06cacc2fb0087e9d4e915"
+  integrity sha512-6jXAbn5771YwuBrCUHzZOKslW0lKxc+03GMhvIbFqpJs/o4+4A+AxxzUW8n2oQRQ4wjjkfH+uCWVtVcVMw6IhQ==
+  dependencies:
+    glob "^7.1.3"
+    newline "0.0.3"
 
 postgres-array@~1.0.0:
   version "1.0.3"
