@@ -3,7 +3,7 @@ const AWS = require('aws-sdk')
 
 console.log('you require my assistance?')
 
-function getConfig(mySwitch = 'development') {
+function getConfig() {
   const PORT = 5432
   const USER = 'dexprices'
   let HOSTNAME = ''
@@ -11,7 +11,7 @@ function getConfig(mySwitch = 'development') {
   const signer = new AWS.RDS.Signer({ region: 'us-east-1' })
   let token = ''
 
-  switch (mySwitch) {
+  switch (process.env.STAGE) {
     case 'production':
       break
     case 'sandbox':
