@@ -54,29 +54,27 @@ plugins:
   - serverless-log-forwarding
   # - serverless-ssm-fetch
 
-# custom:
-#   contentEncoding:
-#     minimumCompressionSize: 0 # Minimum body size required for compression in bytes
-#   #serverlessSsmFetch:
-#   #  SAMPLE: /PATH/TO/SAMPLE~true
-#   serverless-offline:
-#     port: 4000
-#   dynamodb:
-#     start:
-#       port: 8002
-#       migrate: true
-#       dbPath: './'
-#     migration:
-#       dir: offline/migrations
-#   <%public_switch%>
-#   customDomain:
-#     domainName: <%service%>.${env:STAGE,"development"}.<%org%>.io
-#     basePath: ''
-#     createRoute53Record: true
-#   <%/public_switch%>
-#   logForwarding:
-#     destinationARN: 'arn:aws:lambda:us-east-1:${env:ACCOUNT_ID,"077264904088"}:function:DatadogLogCollector'
-#     filterPattern: "-\"RequestId: \""
+custom:
+  contentEncoding:
+    minimumCompressionSize: 0 # Minimum body size required for compression in bytes
+  #serverlessSsmFetch:
+  #  SAMPLE: /PATH/TO/SAMPLE~true
+  serverless-offline:
+    port: 4000
+  dynamodb:
+    start:
+      port: 8002
+      migrate: true
+      dbPath: './'
+    migration:
+      dir: offline/migrations
+  customDomain:
+    domainName: ${self:service}.${env:STAGE,"development"}.airswap.io
+    basePath: ''
+    createRoute53Record: true
+  logForwarding:
+    destinationARN: 'arn:aws:lambda:us-east-1:${env:ACCOUNT_ID,"077264904088"}:function:DatadogLogCollector'
+    filterPattern: "-\"RequestId: \""
 
 functions:
   hello:
@@ -122,10 +120,10 @@ resources:
       Default: ''
     domainName:
       Type: String
-      Default: '${self:service}.<%org%>.io'
+      Default: '${self:service}.airswap.io'
     certificateArn:
       Type: String
-      Default: 'arn:aws:acm:us-east-1:<%org_prod_account%>:certificate/2c6f78cb-57e7-4b64-b4a4-63589adb1af3' # *.airswap.io
+      Default: 'arn:aws:acm:us-east-1:596112922682:certificate/2c6f78cb-57e7-4b64-b4a4-63589adb1af3' # *.airswap.io
   Conditions:
     # Condition: is stage production?
     IsProduction:
