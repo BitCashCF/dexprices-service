@@ -77,13 +77,6 @@ custom:
     filterPattern: "-\"RequestId: \""
 
 functions:
-  hello:
-    handler: handler.hello
-    events:
-      - http:
-          path: /hello
-          method: GET
-          cors: true
   buy:
     handler: handler.buy
     events:
@@ -91,6 +84,11 @@ functions:
           path: /buy
           method: GET
           cors: true
+          request:
+            parameters:
+              querystrings:
+                amount: true
+                token: true
   sell:
     handler: handler.sell
     events:
@@ -98,6 +96,11 @@ functions:
           path: /sell
           method: GET
           cors: true
+          request:
+            parameters:
+              querystrings:
+                amount: true
+                token: true
   buyPriceSnapshot:
     handler: handler.buyPriceSnapshot
     events:
@@ -120,7 +123,7 @@ resources:
       Default: ''
     domainName:
       Type: String
-      Default: '${self:service}.airswap.io'
+      Default: ${self:service}.airswap.io
     certificateArn:
       Type: String
       Default: 'arn:aws:acm:us-east-1:596112922682:certificate/2c6f78cb-57e7-4b64-b4a4-63589adb1af3' # *.airswap.io
