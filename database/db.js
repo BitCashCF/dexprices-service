@@ -1,8 +1,6 @@
 const { Client } = require('pg')
 const AWS = require('aws-sdk')
 
-console.log('you require my assistance?')
-
 function getConfig() {
   const PORT = 5432
   const USER = 'dexprices'
@@ -22,7 +20,7 @@ function getConfig() {
       token = signer.getAuthToken({
         hostname: HOSTNAME,
         port: PORT,
-        username: USER
+        username: USER,
       })
       console.log(token)
       return {
@@ -31,7 +29,7 @@ function getConfig() {
         user: USER,
         password: token,
         port: PORT,
-        ssl: true
+        ssl: true,
       }
     default:
       return {

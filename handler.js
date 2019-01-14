@@ -29,32 +29,38 @@ module.exports = {
       })
   },
   buy: (event, context, callback) => {
-    try {
-      const { queryStringParameters } = event
-      if (!queryStringParameters) throw new Error('must include query strings')
-      const { amount, symbol, decimals } = queryStringParameters
-      if (!amount || !symbol) throw new Error('must include "amount" and "symbol" parameters')
-
-      main(symbol, amount, 'BUY', decimals || null).then(sortedResponses => {
-        callback(null, makeResponse(sortedResponses))
-      })
-    } catch (error) {
-      callback(error, null)
+    const { queryStringParameters } = event
+    console.log('-----------QUERY STRING OBJECT--------------')
+    console.log(queryStringParameters)
+    if (!queryStringParameters) {
+      callback('must include query strings', null)
+      return
     }
+    const { amount, symbol, decimals } = queryStringParameters
+    if (!amount || !symbol) {
+      callback('must include "amount" and "symbol" parameters', null)
+      return
+    }
+
+    main(symbol, amount, 'BUY', decimals || null).then(sortedResponses => {
+      callback(null, makeResponse(sortedResponses))
+    })
   },
   sell: (event, context, callback) => {
-    try {
-      const { queryStringParameters } = event
-      if (!queryStringParameters) throw new Error('must include query strings')
-      const { amount, symbol, decimals } = queryStringParameters
-      if (!amount || !symbol) throw new Error('must include "amount" and "symbol" parameters')
-
-      main(symbol, amount, 'SELL', decimals || null).then(sortedResponses => {
-        callback(null, makeResponse(sortedResponses))
-      })
-    } catch (error) {
-      callback(error, null)
+    const { queryStringParameters } = event
+    if (!queryStringParameters) {
+      callback('must include query strings', null)
+      return
     }
+    const { amount, symbol, decimals } = queryStringParameters
+    if (!amount || !symbol) {
+      callback('must include "amount" and "symbol" parameters', null)
+      return
+    }
+
+    main(symbol, amount, 'BUY', decimals || null).then(sortedResponses => {
+      callback(null, makeResponse(sortedResponses))
+    })
   },
   buyPriceSnapshot: async (event, context, callback) => {
     const batchTimestamp = Date.now()
