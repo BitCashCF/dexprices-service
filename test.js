@@ -1,3 +1,3 @@
 const { buyPriceSnapshot } = require('./handler.js')
 
-buyPriceSnapshot()
+buyPriceSnapshot().then(console.log)
