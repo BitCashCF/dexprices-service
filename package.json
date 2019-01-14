@@ -41,9 +41,9 @@
   },
   "devDependencies": {
     "serverless-content-encoding": "^1.1.0",
-    "serverless-domain-manager": "^2.6.10",
+    "serverless-domain-manager": "^2.6.11",
     "serverless-log-forwarding": "^1.3.0",
-    "serverless-offline": "^3.31.3",
+    "serverless-offline": "^3.33.0",
     "serverless-plugin-tracing": "^2.0.0",
     "serverless-ssm-fetch": "^1.0.1"
   }
