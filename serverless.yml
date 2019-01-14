@@ -20,18 +20,18 @@ service: ethereum-dex-prices-service
 provider:
   name: aws
   runtime: nodejs8.10
-  stage: ${env:STAGE, 'development'}
+  stage: ${env:STAGE, "development"}
   timeout: 60
   cfnRole: arn:aws:iam::${env:ACCOUNT_ID,"077264904088"}:role/ServerlessCloudformation
   tracing: true # enable tracing
   stackTags:
-    Environment: ${env:STAGE, 'development'}
+    Environment: ${env:STAGE, "development"}
     Team: 'CHANGE_ME'
     Service: '${self:service}'
     Name: '${self:service}'
     Owner: 'CHANGE_ME'
   environment:
-    STAGE: ${env:STAGE, 'development'}
+    STAGE: ${env:STAGE, "development"}
   iamRoleStatements:
     - Effect: 'Allow'
       Action:
