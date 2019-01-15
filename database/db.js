@@ -22,7 +22,6 @@ function getConfig() {
         port: PORT,
         username: USER,
       })
-      console.log(token)
       return {
         host: HOSTNAME,
         database: DATABASE,
