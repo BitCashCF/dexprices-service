@@ -56,7 +56,7 @@ module.exports = {
       return
     }
 
-    main(symbol, amount, 'BUY', decimals || null).then(sortedResponses => {
+    main(symbol, amount, 'SELL', decimals || null).then(sortedResponses => {
       callback(null, makeResponse(sortedResponses))
     })
   },
