@@ -22,6 +22,14 @@ function getConfig() {
         port: PORT,
         username: USER,
       })
+      console.log({
+        host: HOSTNAME,
+        database: DATABASE,
+        user: USER,
+        password: token,
+        port: PORT,
+        ssl: true,
+      })
       return {
         host: HOSTNAME,
         database: DATABASE,
@@ -45,10 +53,12 @@ function getConfig() {
 async function initDb() {
   const client = new Client(getConfig())
   try {
+    console.log('connecting')
     await client.connect()
   } catch (err) {
     console.log(err)
   }
+  console.log('returning')
   return client
 }
 

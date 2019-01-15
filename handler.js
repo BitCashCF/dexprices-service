@@ -18,6 +18,7 @@ module.exports = {
   hello: (event, context, callback) => {
     initDb()
       .then(db => {
+        console.log('then db...')
         const { user, database, port, host } = db
         console.log('db connection successful!', `user ${user} connected on ${host}:${port} to DB "${database}"`)
         callback(null, makeResponse('hello world'))
