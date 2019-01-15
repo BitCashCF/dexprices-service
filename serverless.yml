@@ -26,10 +26,10 @@ provider:
   tracing: true # enable tracing
   stackTags:
     Environment: ${env:STAGE, "development"}
-    Team: 'CHANGE_ME'
+    Team: 'AirSwap'
     Service: '${self:service}'
     Name: '${self:service}'
-    Owner: 'CHANGE_ME'
+    Owner: 'Graham'
   environment:
     STAGE: ${env:STAGE, "development"}
   iamRoleStatements:
@@ -110,6 +110,7 @@ functions:
                 token: true
   buyPriceSnapshot:
     handler: handler.buyPriceSnapshot
+    timeout: 900
     events:
       - schedule:
           # every day at 2:00pm UTC
@@ -117,6 +118,7 @@ functions:
           enabled: true
   sellPriceSnapshot:
     handler: handler.sellPriceSnapshot
+    timeout: 900
     events:
       - schedule:
           # every day at 20 minutes past 2:00pm UTC

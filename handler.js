@@ -84,6 +84,7 @@ module.exports = {
               data: sortedResponses,
             })
           } catch (error) {
+            console.error(error)
             // yell in slack that there was a critical error.. this should never happen
             // if we are in this block, it means the `main` routine is broken.
             // the main routine sqeulches its own errors and logs them as results.
@@ -93,7 +94,7 @@ module.exports = {
           // sleep for 1s to avoid api rate limits
           setTimeout(() => {
             workLoop(currentLevel)
-          }, 1000)
+          }, 500)
         }
         workLoop(priceLevel)
       })
@@ -141,7 +142,7 @@ module.exports = {
             return
           }
           const { symbol, decimals, levels } = tokenData
-          console.log('doing work for ', symbol)
+          console.log(`getting prices for ${levels[currentLevel]} ${symbol}`)
           try {
             const sortedResponses = await main(symbol, levels[currentLevel], 'SELL', decimals)
             snapshots.push({
@@ -151,6 +152,7 @@ module.exports = {
               data: sortedResponses,
             })
           } catch (error) {
+            console.error(error)
             // yell in slack that there was a critical error.. this should never happen
             // if we are in this block, it means the `main` routine is broken.
             // the main routine sqeulches its own errors and logs them as results.
@@ -160,7 +162,7 @@ module.exports = {
           // sleep for 1s to avoid api rate limits
           setTimeout(() => {
             workLoop(currentLevel)
-          }, 1000)
+          }, 500)
         }
         workLoop(priceLevel)
       })
