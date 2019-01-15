@@ -30,8 +30,6 @@ module.exports = {
   },
   buy: (event, context, callback) => {
     const { queryStringParameters } = event
-    console.log('-----------QUERY STRING OBJECT--------------')
-    console.log(queryStringParameters)
     if (!queryStringParameters) {
       callback('must include query strings', null)
       return
@@ -71,12 +69,12 @@ module.exports = {
       return new Promise(resolve => {
         async function workLoop(currentLevel) {
           const tokenData = tokens.pop()
-          console.log(tokens.length)
           if (!tokenData) {
             resolve(snapshots)
             return
           }
           const { symbol, decimals, levels } = tokenData
+          console.log(`getting prices for ${levels[currentLevel]} ${symbol}`)
           try {
             const sortedResponses = await main(symbol, levels[currentLevel], 'BUY', decimals)
             snapshots.push({
@@ -107,7 +105,6 @@ module.exports = {
       await doWorkForPriceLevel(0)
       await doWorkForPriceLevel(1)
       await doWorkForPriceLevel(2)
-
       initDb()
         .then(db => {
           Snapshot.createSnapshots(db, snapshots).then(arr => {
@@ -144,6 +141,7 @@ module.exports = {
             return
           }
           const { symbol, decimals, levels } = tokenData
+          console.log('doing work for ', symbol)
           try {
             const sortedResponses = await main(symbol, levels[currentLevel], 'SELL', decimals)
             snapshots.push({

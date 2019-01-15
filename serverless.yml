@@ -77,6 +77,13 @@ custom:
     filterPattern: "-\"RequestId: \""
 
 functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /hello
+          method: GET
+          cors: true
   buy:
     handler: handler.buy
     events:
