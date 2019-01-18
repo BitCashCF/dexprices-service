@@ -45,6 +45,8 @@ provider:
         - 'xray:PutTelemetryRecords'
       Resource:
         - '*'
+  iamManagedPolicies:
+    - arn:aws:iam::${env:ACCOUNT_ID,"077264904088"}:policy/ServerlessRDS
 
 plugins:
   - serverless-offline
