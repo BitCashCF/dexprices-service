@@ -102,30 +102,24 @@ module.exports = {
 
     // don't use Promise.all.. we don't want these to run concurrently
     // calls are intentionally staggered to avoid API rate limits
+    let db
     try {
       await doWorkForPriceLevel(0)
       await doWorkForPriceLevel(1)
       await doWorkForPriceLevel(2)
-      initDb()
-        .then(db => {
-          Snapshot.createSnapshots(db, snapshots).then(arr => {
-            console.log(`successfully inserted ${arr.length} rows`)
-            if (callback) {
-              callback(null, snapshots)
-            }
-            db.end()
-          })
-        })
-        .catch(e => {
-          console.log('db connection failure', e.message)
-          if (callback) {
-            callback(e, null)
-          }
-        })
+      db = await initDb()
+      const createdSnapshots = await Snapshot.createSnapshots(db, snapshots)
+      console.log(`successfully inserted ${createdSnapshots.length} rows`)
+      if (callback) {
+        callback(null, snapshots)
+      }
+      db.end()
     } catch (error) {
+      console.error(error)
       if (callback) {
         callback(error, null)
       }
+      db.end()
     }
   },
   sellPriceSnapshot: async (event, context, callback) => {
@@ -170,30 +164,24 @@ module.exports = {
 
     // don't use Promise.all.. we don't want these to run concurrently
     // calls are intentionally staggered to avoid API rate limits
+    let db
     try {
       await doWorkForPriceLevel(0)
       await doWorkForPriceLevel(1)
       await doWorkForPriceLevel(2)
-      initDb()
-        .then(db => {
-          Snapshot.createSnapshots(db, snapshots).then(arr => {
-            console.log(`successfully inserted ${arr.length} rows`)
-            if (callback) {
-              callback(null, snapshots)
-            }
-            db.end()
-          })
-        })
-        .catch(e => {
-          console.log('db connection failure', e.message)
-          if (callback) {
-            callback(e, null)
-          }
-        })
+      db = await initDb()
+      const createdSnapshots = await Snapshot.createSnapshots(db, snapshots)
+      console.log(`successfully inserted ${createdSnapshots.length} rows`)
+      if (callback) {
+        callback(null, snapshots)
+      }
+      db.end()
     } catch (error) {
+      console.error(error)
       if (callback) {
         callback(error, null)
       }
+      db.end()
     }
   },
 }
