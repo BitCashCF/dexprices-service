@@ -1,5 +1,5 @@
 CREATE TABLE snapshots (
-    id integer DEFAULT nextval('snapshots_table_id_seq'::regclass) PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     exchange_name text NOT NULL,
     total_price numeric,
     token_amount numeric NOT NULL,
