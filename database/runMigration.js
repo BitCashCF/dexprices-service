@@ -4,6 +4,7 @@ const { getConfig } = require('./db')
 
 function runMigration() {
   const config = getConfig()
+  console.log(config)
   const postgrator = new Postgrator({
     migrationDirectory: path.join(__dirname, '/migrations'),
     driver: 'pg',
@@ -13,6 +14,7 @@ function runMigration() {
     username: config.user,
     password: config.password,
     schemaTable: 'schemaversion',
+    ssl: true,
   })
 
   // Migrate to specific version
