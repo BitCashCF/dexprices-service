@@ -5,7 +5,7 @@ const uuid = require('uuid4')
 const { AIRSWAP_TOKEN_METADATA_URL } = require('../constants.js')
 
 const { Wallet, utils } = ethers
-const TIMEOUT = 6000
+const TIMEOUT = 4000
 const INDEXER_ADDRESS = '0x0000000000000000000000000000000000000000'
 
 module.exports = class AirSwap {
@@ -17,7 +17,7 @@ module.exports = class AirSwap {
 
     // Set the websocket url based on environment
     this.socketUrl = 'wss://connect.airswap-api.com/websocket'
-    this.metadataUrl = AIRSWAP_TOKEN_METADATA_URL
+    this.metadataUrl = `${AIRSWAP_TOKEN_METADATA_URL}/tokens`
 
     // Websocket authentication state
     this.isAuthenticated = false
@@ -210,7 +210,6 @@ module.exports = class AirSwap {
             // We have completed the challenge.
             case 'ok':
               this.isAuthenticated = true
-              console.log('Working...')
               resolve(event.data)
               break
             case 'not authorized':

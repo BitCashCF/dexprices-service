@@ -1,23 +1,82 @@
 const { Client } = require('pg')
-
-console.log('you require my assistance?')
+const AWS = require('aws-sdk')
 
 function getConfig() {
-  if (process.env.STAGE === 'local') {
-    return {
-      host: 'localhost',
-      database: 'dexprices-service',
-      user: 'postgres',
-      password: 'example',
-      port: 5432,
-    }
+  const PORT = 5432
+  const USER = 'dexprices'
+  let HOSTNAME = ''
+  const DATABASE = 'dexprices'
+  const signer = new AWS.RDS.Signer({ region: 'us-east-1' })
+  let token = ''
+
+  switch (process.env.STAGE) {
+    case 'production':
+      HOSTNAME = 'serverless-services.csji2l0hthxl.us-east-1.rds.amazonaws.com'
+      // get the password token
+      token = signer.getAuthToken({
+        hostname: HOSTNAME,
+        port: PORT,
+        username: USER,
+      })
+      return {
+        host: HOSTNAME,
+        database: DATABASE,
+        user: USER,
+        password: token,
+        port: PORT,
+        ssl: true,
+      }
+    case 'sandbox':
+      HOSTNAME = 'serverless-services.crueocfifk66.us-east-1.rds.amazonaws.com'
+      // get the password token
+      token = signer.getAuthToken({
+        hostname: HOSTNAME,
+        port: PORT,
+        username: USER,
+      })
+      return {
+        host: HOSTNAME,
+        database: DATABASE,
+        user: USER,
+        password: token,
+        port: PORT,
+        ssl: true,
+      }
+    case 'development':
+      HOSTNAME = 'serverless-services.c3yynxcbeqcu.us-east-1.rds.amazonaws.com'
+      // get the password token
+      token = signer.getAuthToken({
+        hostname: HOSTNAME,
+        port: PORT,
+        username: USER,
+      })
+      return {
+        host: HOSTNAME,
+        database: DATABASE,
+        user: USER,
+        password: token,
+        port: PORT,
+        ssl: true,
+      }
+    default:
+      return {
+        host: 'localhost',
+        database: 'dexprices-service',
+        user: 'postgres',
+        password: 'example',
+        port: PORT,
+      }
   }
-  console.log('environment not yet supported!')
   return null
 }
+
 async function initDb() {
   const client = new Client(getConfig())
-  await client.connect()
+  try {
+    await client.connect()
+  } catch (err) {
+    console.log(err)
+  }
   return client
 }
 

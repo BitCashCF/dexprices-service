@@ -1,0 +1,125 @@
+###
+# Fluidity Serverless CircleCI script
+#
+# Copy and paste me into a repo to enable Serverless build and deploys.
+# Please update the version number when making changes.
+#
+# @author Fluidity Ops
+# @version 1.2.1
+#
+###
+
+version: 2.1
+
+orbs:
+  airswap: airswap/assume-role@volatile
+  aws-cli: airswap/aws-cli@volatile
+  slack: circleci/slack@0.1.1
+  serverless: airswap/serverless@volatile
+  datadog: airswap/datadog@volatile
+
+references:
+
+  container_config: &container_config
+    docker:
+      - image: circleci/node:8
+    working_directory: ~/repo
+
+  npm_cache_key: &npm_cache_key
+    v2-dependencies-{{ checksum "package.json" }}
+  npm_backup_cache_key: &npm_backup_cache_key
+    v2-dependencies-
+
+  restore_node_modules: &restore_node_modules
+    restore_cache:
+      keys:
+        - *npm_cache_key
+        - *npm_backup_cache_key
+
+  restore_repo: &restore_repo
+    restore_cache:
+      keys:
+        - v2-repo-{{ .Branch }}-{{ .Revision }}
+        - v2-repo-{{ .Branch }}
+        - v2-repo
+
+  deploy: &deploy
+    <<: *container_config
+    steps:
+      - *restore_repo
+      - *restore_node_modules
+      - aws-cli/install
+      - airswap/assume-role:
+          role-name: ServerlessRDS
+      - run:
+          name: Migrate the DB
+          command: yarn && yarn db:migrate
+      - airswap/assume-role:
+          role-name: ServerlessDeployment
+      - serverless/install
+      - serverless/deploy
+      - slack/status
+      - datadog/deploy
+
+jobs:
+  checkout_code:
+    <<: *container_config
+    steps:
+      - checkout:
+          path: ~/repo
+      - save_cache:
+          key: v2-repo-{{ .Branch }}-{{ .Revision }}
+          paths:
+            - .
+  build:
+    <<: *container_config
+    steps:
+      - *restore_repo
+      - *restore_node_modules
+      - run: mkdir -p ~/.ssh/ && ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - run:
+          name: yarn install
+          command: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: *npm_cache_key
+
+  deploy_development:
+    <<: *deploy
+  deploy_sandbox:
+    <<: *deploy
+  deploy_production:
+    <<: *deploy
+
+workflows:
+  build_deploy:
+    jobs:
+      - checkout_code
+      - build:
+          requires:
+            - checkout_code
+      - deploy_development:
+          requires:
+            - build
+          context: Development
+          filters:
+            branches:
+              only:
+                - develop
+      - deploy_sandbox:
+          requires:
+            - build
+          context: Sandbox
+          filters:
+            branches:
+              only:
+                - master
+      - deploy_production:
+          requires:
+            - build
+          context: Production
+          filters:
+            branches:
+              only:
+                - master

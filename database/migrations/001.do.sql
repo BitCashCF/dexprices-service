@@ -1,10 +1,11 @@
 CREATE TABLE snapshots (
-    id integer DEFAULT nextval('snapshots_table_id_seq'::regclass) PRIMARY KEY,
-    "exchangeName" text NOT NULL,
-    "totalPrice" numeric,
-    "tokenAmount" numeric NOT NULL,
-    "tokenSymbol" character varying(5) NOT NULL,
-    "errorMessage" text,
+    id SERIAL PRIMARY KEY,
+    exchange_name text NOT NULL,
+    total_price numeric,
+    token_amount numeric NOT NULL,
+    token_symbol character varying(5) NOT NULL,
+    error_message text,
+    is_sell boolean NOT NULL,
     timestamp bigint NOT NULL,
-    "batchTimestamp" bigint NOT NULL
+    batch_timestamp bigint NOT NULL
 );

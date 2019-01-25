@@ -29,32 +29,36 @@ module.exports = {
       })
   },
   buy: (event, context, callback) => {
-    try {
-      const { queryStringParameters } = event
-      if (!queryStringParameters) throw new Error('must include query strings')
-      const { amount, symbol, decimals } = queryStringParameters
-      if (!amount || !symbol) throw new Error('must include "amount" and "symbol" parameters')
-
-      main(symbol, amount, 'BUY', decimals || null).then(sortedResponses => {
-        callback(null, makeResponse(sortedResponses))
-      })
-    } catch (error) {
-      callback(error, null)
+    const { queryStringParameters } = event
+    if (!queryStringParameters) {
+      callback('must include query strings', null)
+      return
     }
+    const { amount, symbol, decimals } = queryStringParameters
+    if (!amount || !symbol) {
+      callback('must include "amount" and "symbol" parameters', null)
+      return
+    }
+
+    main(symbol, amount, 'BUY', decimals || null).then(sortedResponses => {
+      callback(null, makeResponse(sortedResponses))
+    })
   },
   sell: (event, context, callback) => {
-    try {
-      const { queryStringParameters } = event
-      if (!queryStringParameters) throw new Error('must include query strings')
-      const { amount, symbol, decimals } = queryStringParameters
-      if (!amount || !symbol) throw new Error('must include "amount" and "symbol" parameters')
-
-      main(symbol, amount, 'SELL', decimals || null).then(sortedResponses => {
-        callback(null, makeResponse(sortedResponses))
-      })
-    } catch (error) {
-      callback(error, null)
+    const { queryStringParameters } = event
+    if (!queryStringParameters) {
+      callback('must include query strings', null)
+      return
     }
+    const { amount, symbol, decimals } = queryStringParameters
+    if (!amount || !symbol) {
+      callback('must include "amount" and "symbol" parameters', null)
+      return
+    }
+
+    main(symbol, amount, 'SELL', decimals || null).then(sortedResponses => {
+      callback(null, makeResponse(sortedResponses))
+    })
   },
   buyPriceSnapshot: async (event, context, callback) => {
     const batchTimestamp = Date.now()
@@ -65,12 +69,12 @@ module.exports = {
       return new Promise(resolve => {
         async function workLoop(currentLevel) {
           const tokenData = tokens.pop()
-          console.log(tokens.length)
           if (!tokenData) {
             resolve(snapshots)
             return
           }
           const { symbol, decimals, levels } = tokenData
+          console.log(`getting prices for ${levels[currentLevel]} ${symbol}`)
           try {
             const sortedResponses = await main(symbol, levels[currentLevel], 'BUY', decimals)
             snapshots.push({
@@ -80,6 +84,7 @@ module.exports = {
               data: sortedResponses,
             })
           } catch (error) {
+            console.error(error)
             // yell in slack that there was a critical error.. this should never happen
             // if we are in this block, it means the `main` routine is broken.
             // the main routine sqeulches its own errors and logs them as results.
@@ -89,7 +94,7 @@ module.exports = {
           // sleep for 1s to avoid api rate limits
           setTimeout(() => {
             workLoop(currentLevel)
-          }, 1000)
+          }, 500)
         }
         workLoop(priceLevel)
       })
@@ -97,31 +102,24 @@ module.exports = {
 
     // don't use Promise.all.. we don't want these to run concurrently
     // calls are intentionally staggered to avoid API rate limits
+    let db
     try {
       await doWorkForPriceLevel(0)
       await doWorkForPriceLevel(1)
       await doWorkForPriceLevel(2)
-
-      initDb()
-        .then(db => {
-          Snapshot.createSnapshots(db, snapshots).then(arr => {
-            console.log(`successfully inserted ${arr.length} rows`)
-            if (callback) {
-              callback(null, snapshots)
-            }
-            db.end()
-          })
-        })
-        .catch(e => {
-          console.log('db connection failure', e.message)
-          if (callback) {
-            callback(e, null)
-          }
-        })
+      db = await initDb()
+      const createdSnapshots = await Snapshot.createSnapshots(db, snapshots)
+      console.log(`successfully inserted ${createdSnapshots.length} rows`)
+      if (callback) {
+        callback(null, snapshots)
+      }
+      db.end()
     } catch (error) {
+      console.error(error)
       if (callback) {
         callback(error, null)
       }
+      db.end()
     }
   },
   sellPriceSnapshot: async (event, context, callback) => {
@@ -138,6 +136,7 @@ module.exports = {
             return
           }
           const { symbol, decimals, levels } = tokenData
+          console.log(`getting prices for ${levels[currentLevel]} ${symbol}`)
           try {
             const sortedResponses = await main(symbol, levels[currentLevel], 'SELL', decimals)
             snapshots.push({
@@ -147,6 +146,7 @@ module.exports = {
               data: sortedResponses,
             })
           } catch (error) {
+            console.error(error)
             // yell in slack that there was a critical error.. this should never happen
             // if we are in this block, it means the `main` routine is broken.
             // the main routine sqeulches its own errors and logs them as results.
@@ -156,7 +156,7 @@ module.exports = {
           // sleep for 1s to avoid api rate limits
           setTimeout(() => {
             workLoop(currentLevel)
-          }, 1000)
+          }, 500)
         }
         workLoop(priceLevel)
       })
@@ -164,30 +164,24 @@ module.exports = {
 
     // don't use Promise.all.. we don't want these to run concurrently
     // calls are intentionally staggered to avoid API rate limits
+    let db
     try {
       await doWorkForPriceLevel(0)
       await doWorkForPriceLevel(1)
       await doWorkForPriceLevel(2)
-      initDb()
-        .then(db => {
-          Snapshot.createSnapshots(db, snapshots).then(arr => {
-            console.log(`successfully inserted ${arr.length} rows`)
-            if (callback) {
-              callback(null, snapshots)
-            }
-            db.end()
-          })
-        })
-        .catch(e => {
-          console.log('db connection failure', e.message)
-          if (callback) {
-            callback(e, null)
-          }
-        })
+      db = await initDb()
+      const createdSnapshots = await Snapshot.createSnapshots(db, snapshots)
+      console.log(`successfully inserted ${createdSnapshots.length} rows`)
+      if (callback) {
+        callback(null, snapshots)
+      }
+      db.end()
     } catch (error) {
+      console.error(error)
       if (callback) {
         callback(error, null)
       }
+      db.end()
     }
   },
 }
