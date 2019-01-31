@@ -11,9 +11,37 @@ function getConfig() {
 
   switch (process.env.STAGE) {
     case 'production':
-      break
+      HOSTNAME = 'serverless-services.csji2l0hthxl.us-east-1.rds.amazonaws.com'
+      // get the password token
+      token = signer.getAuthToken({
+        hostname: HOSTNAME,
+        port: PORT,
+        username: USER,
+      })
+      return {
+        host: HOSTNAME,
+        database: DATABASE,
+        user: USER,
+        password: token,
+        port: PORT,
+        ssl: true,
+      }
     case 'sandbox':
-      break
+      HOSTNAME = 'serverless-services.crueocfifk66.us-east-1.rds.amazonaws.com'
+      // get the password token
+      token = signer.getAuthToken({
+        hostname: HOSTNAME,
+        port: PORT,
+        username: USER,
+      })
+      return {
+        host: HOSTNAME,
+        database: DATABASE,
+        user: USER,
+        password: token,
+        port: PORT,
+        ssl: true,
+      }
     case 'development':
       HOSTNAME = 'serverless-services.c3yynxcbeqcu.us-east-1.rds.amazonaws.com'
       // get the password token
