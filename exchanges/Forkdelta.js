@@ -37,7 +37,7 @@ module.exports = class Forkdelta extends OrderBookExchange {
         this.service
           .init({
             addressEtherDelta: '0x8d12a197cb00d4747a1fe03395095ce2a5cc6819',
-            provider: 'https://mainnet.infura.io/Ky03pelFIxoZdAUsr82w',
+            provider: null,
             socketURL: 'https://api.forkdelta.com',
             gasLimit: 150000,
             gasPrice: 4000000000,
