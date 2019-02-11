@@ -32,6 +32,8 @@ const TOP_TOKENS_DATA = [
   { symbol: 'REQ', decimals: 18, levels: calculateLevels(4000) },
   { symbol: 'SNT', decimals: 18, levels: calculateLevels(4000) },
 ]
+// DDEX charges a 0.3% taker fee
+const DDEX_TAKER_FEE = 0.003
 
 const UNISWAP_FACTORY_ADDRESS = '0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95'
 const UNISWAP_FACTORY_ABI = [
@@ -144,6 +146,7 @@ module.exports = {
   KYBER_URL,
   BANCOR_URL,
   DDEX_URL,
+  DDEX_TAKER_FEE,
   RADAR_RELAY_URL,
   AIRSWAP_TOKEN_METADATA_URL,
   ETHFINEX_URL,
