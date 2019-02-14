@@ -13,6 +13,7 @@
     "debug:cli": "node --inspect-brk entrypoints/cli.js",
     "debug:express": "node --inspect-brk entrypoints/server.js",
     "debug:serverless": "SLS_DEBUG=* STAGE=local node --inspect-brk ~/.nvm/versions/node/v8.11.2/bin/serverless offline start",
+    "db:migrate": "node database/runMigration.js",
     "serve:express": "node entrypoints/server.js",
     "serve:serverless": "STAGE=local serverless offline start",
     "generateTokenMetadata": "node generateTokensBySymbol.js",
