@@ -5,3 +5,7 @@ test.js
 
 # Serverless directories
 .serverless
+
+# Jest
+
+coverage/
