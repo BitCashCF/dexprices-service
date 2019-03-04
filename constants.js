@@ -8,6 +8,7 @@ const ETHFINEX_URL = 'https://api.ethfinex.com/v1'
 const SATURN_URL = 'https://ticker.saturn.network/api/v2'
 const FORKDELTA_URL = 'https://api.forkdelta.com'
 const AIRSWAP_TOKEN_METADATA_URL = 'https://token-metadata.production.airswap.io'
+const SWITCHEO_URL = 'https://api.switcheo.network'
 
 const TOP_TOKENS_DATA = [
   { symbol: 'BNB', decimals: 18, levels: calculateLevels(20) },
@@ -156,4 +157,5 @@ module.exports = {
   TOP_TOKENS_DECIMAL_MAP,
   UNISWAP_FACTORY_ADDRESS,
   UNISWAP_FACTORY_ABI,
+  SWITCHEO_URL,
 }
