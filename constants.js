@@ -10,6 +10,7 @@ const FORKDELTA_URL = 'https://api.forkdelta.com'
 const AIRSWAP_TOKEN_METADATA_URL = 'https://token-metadata.production.airswap.io'
 const AIRSWAP_HEADLESS_API = 'https://headless.production.airswap.io'
 const SWITCHEO_URL = 'https://api.switcheo.network'
+const COINGECKO_API_URL = 'https://api.coingecko.com/api/v3'
 
 const TOP_TOKENS_DATA = [
   { symbol: 'BNB', decimals: 18, levels: calculateLevels(20) },
@@ -115,19 +116,27 @@ const ETH2DAI_ABI = [
   {
     name: 'getBuyAmount',
     outputs: [{ name: 'fill_amt', type: 'uint256' }],
-    inputs: [{ name: 'buy_gem', type: 'address' }, { name: 'pay_gem', type: 'address' }, { name: 'pay_amt', type: 'uint256' }],
+    inputs: [
+      { name: 'buy_gem', type: 'address' },
+      { name: 'pay_gem', type: 'address' },
+      { name: 'pay_amt', type: 'uint256' },
+    ],
     constant: true,
     payable: false,
-    type: 'function'
+    type: 'function',
   },
   {
     name: 'getPayAmount',
     outputs: [{ name: 'fill_amt', type: 'uint256' }],
-    inputs: [{ name: 'pay_gem', type: 'address' }, { name: 'buy_gem', type: 'address' }, { name: 'buy_amt', type: 'uint256' }],
+    inputs: [
+      { name: 'pay_gem', type: 'address' },
+      { name: 'buy_gem', type: 'address' },
+      { name: 'buy_amt', type: 'uint256' },
+    ],
     constant: true,
     payable: false,
-    type: 'function'
-  }
+    type: 'function',
+  },
 ]
 
 const WETH_ADDRESS = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
@@ -187,4 +196,5 @@ module.exports = {
   WETH_ADDRESS,
   WETH_DECIMALS,
   SWITCHEO_URL,
+  COINGECKO_API_URL,
 }

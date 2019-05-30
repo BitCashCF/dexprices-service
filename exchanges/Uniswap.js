@@ -1,6 +1,6 @@
 const tokenAbi = require('human-standard-token-abi')
 const ethers = require('ethers')
-const tokens = require('../tokensBySymbol.json')
+const { tokenSymbolResolver } = require('../tokenSymbolResolver.js')
 const { UNISWAP_FACTORY_ABI, UNISWAP_FACTORY_ADDRESS } = require('../constants.js')
 
 const { utils } = ethers
@@ -14,8 +14,18 @@ module.exports = class Uniswap {
 
   // fetch all supported tokens traded on Uniswap
   async getExchangeLiquidityByAddress(symbol, address, decimals) {
-    const erc20Contract = await new ethers.Contract(address, tokenAbi, this.ethProvider)
-    const exchangeAddress = await this.factoryContract.getExchange(address)
+    // Although TUSD has migrated to a new contract some time ago (0x0000000000085d4780b73119b644ae5ecd22b376),
+    // it is still accessible under the previous address (0x8dd5fbCe2F6a956C3022bA3663759011Dd51e73E)
+    // and it's actually the previous address that the Uniswap reserve exists for.
+    let tokenAddress
+    if (address.toUpperCase() === '0x0000000000085d4780b73119b644ae5ecd22b376'.toUpperCase()) {
+      tokenAddress = '0x8dd5fbCe2F6a956C3022bA3663759011Dd51e73E'
+    } else {
+      tokenAddress = address
+    }
+
+    const erc20Contract = await new ethers.Contract(tokenAddress, tokenAbi, this.ethProvider)
+    const exchangeAddress = await this.factoryContract.getExchange(tokenAddress)
 
     if (exchangeAddress === '0x0000000000000000000000000000000000000000') {
       // token does not yet have an exchange on uniswap
@@ -28,13 +38,6 @@ module.exports = class Uniswap {
     const ethAmount = utils.formatUnits(utils.bigNumberify(ethReserve.toString(10)), 18)
     const tokenAmount = utils.formatUnits(utils.bigNumberify(erc20Reserve.toString(10)), decimals)
     return { ethAmount, tokenAmount }
-  }
-
-  static getTokenMetadata(symbol) {
-    if (tokens[symbol]) {
-      return tokens[symbol]
-    }
-    throw new Error(`no token metadata available for ${symbol}, can't get decimals`)
   }
 
   static getBuyRate(tokenAmountBought, inputReserve, outputReserve) {
@@ -53,7 +56,7 @@ module.exports = class Uniswap {
   async computePrice(symbol, desiredAmount, isSell) {
     let result = {}
     try {
-      const { addr, decimals } = Uniswap.getTokenMetadata(symbol)
+      const { addr, decimals } = await tokenSymbolResolver(symbol)
       const { ethAmount, tokenAmount } = await this.getExchangeLiquidityByAddress(symbol, addr, decimals)
 
       // Any BNB sent to Uniswap will be lost forever
