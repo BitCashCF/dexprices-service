@@ -7,5 +7,7 @@ test.js
 .serverless
 
 # Jest
-
 coverage/
+
+# Local Dev Testing
+scratchpad.js
