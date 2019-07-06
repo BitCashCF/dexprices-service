@@ -1,7 +1,7 @@
 const { initDb } = require('./database/db')
 const Snapshot = require('./database/snapshotModel')
-const { main } = require('./main')
 const { TOP_TOKENS_DATA } = require('./constants')
+const { main } = require('./index')
 
 const makeResponse = (response, origin = null) => ({
   statusCode: 200,

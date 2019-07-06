@@ -1,15 +1,21 @@
 {
-  "name": "ethereum-dex-worker",
-  "version": "1.0.0",
-  "description": "An API wrapper that fetches prices from the most popular Ethereum decentralized exchanges",
-  "main": "main.js",
-  "author": "graham@fluidity.io",
+  "name": "ethereum-dex-prices-service",
+  "version": "0.1.1",
+  "description": "Search crypto asset prices from the most popular Ethereum decentralized exchanges, based on real liquidity",
+  "keywords": [
+    "ethereum",
+    "dex",
+    "decentralized",
+    "exchange",
+    "prices",
+    "crypto",
+    "trading"
+  ],
+  "main": "index.js",
+  "author": "Graham Perich <g@perich.dev>",
   "license": "MIT",
   "scripts": {
     "search": "node entrypoints/cli.js",
-    "lint": "eslint .",
-    "prettier:check": "prettier '**/*.js' -l",
-    "prettier:fix": "prettier --write '**/*.js'",
     "debug:cli": "node --inspect-brk entrypoints/cli.js",
     "debug:express": "node --inspect-brk entrypoints/server.js",
     "debug:serverless": "SLS_DEBUG=* STAGE=local node --inspect-brk ~/.nvm/versions/node/v8.11.2/bin/serverless offline start",
@@ -17,6 +23,9 @@
     "serve:express": "node entrypoints/server.js",
     "serve:serverless": "STAGE=local serverless offline start",
     "generateTokenMetadata": "node generateTokensBySymbol.js",
+    "prettier:check": "prettier '**/*.js' -l",
+    "prettier:fix": "prettier --write '**/*.js'",
+    "lint": "eslint .",
     "test": "jest"
   },
   "pre-commit": [
