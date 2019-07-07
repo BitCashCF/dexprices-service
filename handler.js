@@ -16,6 +16,7 @@ const makeResponse = (response, origin = null) => ({
 
 module.exports = {
   hello: (event, context, callback) => {
+    context.callbackWaitsForEmptyEventLoop = false // eslint-disable-line
     initDb()
       .then(db => {
         const { user, database, port, host } = db
@@ -29,6 +30,7 @@ module.exports = {
       })
   },
   buy: (event, context, callback) => {
+    context.callbackWaitsForEmptyEventLoop = false // eslint-disable-line
     const { queryStringParameters } = event
     if (!queryStringParameters) {
       callback('must include query strings', null)
@@ -45,6 +47,7 @@ module.exports = {
     })
   },
   sell: (event, context, callback) => {
+    context.callbackWaitsForEmptyEventLoop = false // eslint-disable-line
     const { queryStringParameters } = event
     if (!queryStringParameters) {
       callback('must include query strings', null)
@@ -61,6 +64,7 @@ module.exports = {
     })
   },
   buyPriceSnapshot: async (event, context, callback) => {
+    context.callbackWaitsForEmptyEventLoop = false // eslint-disable-line
     const batchTimestamp = Date.now()
     const snapshots = []
 
@@ -123,6 +127,7 @@ module.exports = {
     }
   },
   sellPriceSnapshot: async (event, context, callback) => {
+    context.callbackWaitsForEmptyEventLoop = false // eslint-disable-line
     const batchTimestamp = Date.now()
     const snapshots = []
 
