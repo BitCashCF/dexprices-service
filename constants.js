@@ -11,6 +11,7 @@ const AIRSWAP_TOKEN_METADATA_URL = 'https://token-metadata.production.airswap.io
 const AIRSWAP_HEADLESS_API = 'https://headless.production.airswap.io'
 const SWITCHEO_URL = 'https://api.switcheo.network'
 const COINGECKO_API_URL = 'https://api.coingecko.com/api/v3'
+const BAMBOO_RELAY_URL = 'https://rest.bamboorelay.com/main/0x'
 
 const TOP_TOKENS_DATA = [
   { symbol: 'BNB', decimals: 18, levels: calculateLevels(20) },
@@ -153,6 +154,7 @@ const TOP_TOKENS_DECIMAL_MAP = {
   REP: { decimals: 18, levels: calculateLevels(10) },
   GNO: { decimals: 18, levels: calculateLevels(8) },
   DAI: { decimals: 18, levels: calculateLevels(100) },
+  USDC: { decimals: 18, levels: calculateLevels(100) },
   MANA: { decimals: 18, levels: calculateLevels(2000) },
   WTC: { decimals: 18, levels: calculateLevels(83) },
   BNT: { decimals: 18, levels: calculateLevels(140) },
@@ -197,4 +199,5 @@ module.exports = {
   WETH_DECIMALS,
   SWITCHEO_URL,
   COINGECKO_API_URL,
+  BAMBOO_RELAY_URL
 }
