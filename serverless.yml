@@ -54,9 +54,11 @@ plugins:
   - serverless-domain-manager
   - serverless-content-encoding
   - serverless-log-forwarding
-  # - serverless-ssm-fetch
-
+  - serverless-prune-plugin
 custom:
+  prune:
+    automatic: true
+    number: 5
   contentEncoding:
     minimumCompressionSize: 0 # Minimum body size required for compression in bytes
   #serverlessSsmFetch:
