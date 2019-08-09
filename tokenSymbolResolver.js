@@ -48,8 +48,8 @@ const tokenSymbolResolver = async symbol => {
       }
     })
   } catch (e) {
-    console.log('error while resolving symbol with CoinGecko API:', e.message)
-    console.log('falling back to static token metadata')
+    // console.log('error while resolving symbol with CoinGecko API:', e.message)
+    // console.log('falling back to static token metadata')
     tokenAddress = jsonTokensBySymbol[symbol]
   }
 
