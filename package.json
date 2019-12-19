@@ -34,6 +34,7 @@
   ],
   "dependencies": {
     "aws-sdk": "^2.387.0",
+    "airswap.js": "^0.1.88",
     "bignumber.js": "^8.0.2",
     "cors": "^2.8.5",
     "eslint": "^5.10.0",
