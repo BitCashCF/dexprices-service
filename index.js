@@ -1,3 +1,4 @@
+require('dotenv').config()
 const AirSwap = require('./exchanges/AirSwap.js')
 const BambooRelay = require('./exchanges/BambooRelay.js')
 const Bancor = require('./exchanges/Bancor.js')

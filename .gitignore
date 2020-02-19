@@ -11,3 +11,6 @@ coverage/
 
 # Local Dev Testing
 scratchpad.js
+
+# Webstorm files
+.idea
