@@ -3,12 +3,11 @@ const IDEX_URL = 'https://api.idex.market'
 const KYBER_URL = 'https://api.kyber.network'
 const BANCOR_URL = 'https://api.bancor.network/0.1'
 const DDEX_URL = 'https://api.ddex.io/v3'
-const RADAR_RELAY_URL = 'https://api.radarrelay.com/v2'
+const RADAR_RELAY_URL = 'https://api.radarrelay.com/v3'
 const ETHFINEX_URL = 'https://api.ethfinex.com/trustless/v1/endpoint'
 const SATURN_URL = 'https://ticker.saturn.network/api/v2'
 const FORKDELTA_URL = 'https://api.forkdelta.com'
 const AIRSWAP_TOKEN_METADATA_URL = 'https://token-metadata.production.airswap.io'
-const AIRSWAP_HEADLESS_API = 'https://headless.production.airswap.io'
 const SWITCHEO_URL = 'https://api.switcheo.network'
 const COINGECKO_API_URL = 'https://api.coingecko.com/api/v3'
 const BAMBOO_RELAY_URL = 'https://rest.bamboorelay.com/main/0x'
@@ -186,7 +185,6 @@ module.exports = {
   DDEX_URL,
   DDEX_TAKER_FEE,
   RADAR_RELAY_URL,
-  AIRSWAP_HEADLESS_API,
   AIRSWAP_TOKEN_METADATA_URL,
   ETHFINEX_URL,
   SATURN_URL,
