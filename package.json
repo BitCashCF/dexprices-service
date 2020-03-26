@@ -33,7 +33,9 @@
     "yarn prettier:check"
   ],
   "dependencies": {
-    "airswap.js": "^0.1.114",
+    "@airswap/constants": "^0.3.8",
+    "@airswap/protocols": "^0.4.6",
+    "@airswap/utils": "^0.3.12",
     "aws-sdk": "^2.387.0",
     "bignumber.js": "^8.0.2",
     "cors": "^2.8.5",
@@ -55,9 +57,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "socket.io-client": "^2.2.0",
-    "uuid4": "^1.1.4",
-    "web3": "0.17.0-alpha",
-    "ws": "^6.1.2"
+    "web3": "0.17.0-alpha"
   },
   "devDependencies": {
     "eslint-plugin-jest": "^22.2.2",
