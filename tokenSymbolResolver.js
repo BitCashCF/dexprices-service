@@ -25,9 +25,9 @@ const tokenSymbolResolver = async symbol => {
 
         // it's possible there could be multiple tokens that match the symbol
         // so we will return the one with the highest market cap between the group
-        const bestTokenMetadataMatch = (await Promise.all(
-          matchedTokens.map(obj => rp(`${COINGECKO_API_URL}/coins/${obj.id}`)),
-        ))
+        const bestTokenMetadataMatch = (
+          await Promise.all(matchedTokens.map(obj => rp(`${COINGECKO_API_URL}/coins/${obj.id}`)))
+        )
           .map(JSON.parse)
           .reduce((a, b) => (a.market_cap_rank > b.market_cap_rank ? b : a))
 
@@ -39,7 +39,7 @@ const tokenSymbolResolver = async symbol => {
         )
 
         // resolve with token address and decimals
-        resolve({ addr: bestTokenMetadataMatch.contract_address, decimals })
+        resolve({ addr: bestTokenMetadataMatch.contract_address, decimals: parseInt(decimals, 10) })
       } catch (e) {
         reject(e)
       } finally {

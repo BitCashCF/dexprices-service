@@ -42,7 +42,10 @@ const UNISWAP_FACTORY_ADDRESS = '0xc0a47dFe034B400B47bDaD5FecDa2621de6c4d95'
 const UNISWAP_FACTORY_ABI = [
   {
     name: 'NewExchange',
-    inputs: [{ type: 'address', name: 'token', indexed: true }, { type: 'address', name: 'exchange', indexed: true }],
+    inputs: [
+      { type: 'address', name: 'token', indexed: true },
+      { type: 'address', name: 'exchange', indexed: true },
+    ],
     anonymous: false,
     type: 'event',
   },
@@ -141,7 +144,7 @@ const ETH2DAI_ABI = [
 
 const SNX_TOKEN_ADDRESS = '0xc011a72400e58ecd99ee497cf89e3775d4bd732f'
 const SNX_PROXY_ADDRESS = '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f'
-const WETH_ADDRESS = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
+const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
 const WETH_DECIMALS = 18
 
 const TOP_TOKENS_DECIMAL_MAP = {
