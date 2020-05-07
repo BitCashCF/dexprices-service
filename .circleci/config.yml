@@ -84,8 +84,6 @@ jobs:
 
   deploy_development:
     <<: *deploy
-  deploy_sandbox:
-    <<: *deploy
   deploy_production:
     <<: *deploy
 
@@ -104,14 +102,6 @@ workflows:
             branches:
               only:
                 - develop
-      - deploy_sandbox:
-          requires:
-            - build
-          context: Sandbox
-          filters:
-            branches:
-              only:
-                - master
       - deploy_production:
           requires:
             - build
