@@ -14,9 +14,7 @@ version: 2.1
 orbs:
   airswap: airswap/assume-role@volatile
   aws-cli: airswap/aws-cli@volatile
-  slack: circleci/slack@0.1.1
   serverless: airswap/serverless@volatile
-  datadog: airswap/datadog@volatile
 
 references:
   container_config: &container_config
@@ -55,8 +53,6 @@ references:
           role-name: ServerlessDeployment
       - serverless/install
       - serverless/deploy
-      - slack/status
-      - datadog/deploy
 
 jobs:
   checkout_code:
